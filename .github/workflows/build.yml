@@ -41,7 +41,7 @@ jobs:
     - name: Create local.properties
       run: |
         cd ${{ steps.find_root.outputs.PROJECT_ROOT }}
-        echo "sdk.dir=$ANDROID_HOME" > local.properties
+        echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
     
     - name: Grant execute permission for gradlew
       run: |
